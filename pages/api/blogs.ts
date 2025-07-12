@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-const db = require('../../utils/db');
-const { initDb } = require('../../utils/initDb');
+import db from '../../utils/db';
+import { initDb } from '../../utils/initDb';
 
 initDb();
 

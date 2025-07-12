@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import SEO from '../../components/SEO';
 
@@ -44,10 +44,18 @@ const BlogList = ({ blogs }: BlogListProps) => (
   </>
 );
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/blogs`);
-  const blogs = await res.json();
-  return { props: { blogs } };
+export const getStaticProps: GetStaticProps = async () => {
+  // Import directly from the database for static generation
+  const db = (await import('../../utils/db')).default;
+  const { initDb } = await import('../../utils/initDb');
+  
+  initDb();
+  const blogs = db.prepare('SELECT * FROM blogs ORDER BY date DESC').all();
+  
+  return { 
+    props: { blogs },
+    revalidate: 3600 // Revalidate every hour
+  };
 };
 
 export default BlogList; 

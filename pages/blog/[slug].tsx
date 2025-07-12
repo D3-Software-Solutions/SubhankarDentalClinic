@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { GetStaticProps, GetStaticPaths } from 'next';
 import Link from 'next/link';
 import SEO from '../../components/SEO';
 
@@ -45,14 +45,37 @@ const BlogDetail = ({ blog }: BlogDetailProps) => (
   </>
 );
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { slug } = context.params as { slug: string };
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/blogs?slug=${encodeURIComponent(slug)}`);
-  const blog = await res.json();
-  if (!blog || blog.error) {
-    return { notFound: true };
-  }
-  return { props: { blog } };
+export const getStaticPaths: GetStaticPaths = async () => {
+  // Import directly from the database for static generation
+  const db = (await import('../../utils/db')).default;
+  const { initDb } = await import('../../utils/initDb');
+  
+  initDb();
+  const blogs = db.prepare('SELECT slug FROM blogs').all() as { slug: string }[];
+  
+  const paths = blogs.map((blog) => ({
+    params: { slug: blog.slug },
+  }));
+  
+  return {
+    paths,
+    fallback: false // Return 404 for any paths not returned by getStaticPaths
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  // Import directly from the database for static generation
+  const db = (await import('../../utils/db')).default;
+  const { initDb } = await import('../../utils/initDb');
+  
+  initDb();
+  const { slug } = params as { slug: string };
+  const blog = db.prepare('SELECT * FROM blogs WHERE slug = ?').get(slug);
+  
+  return { 
+    props: { blog },
+    revalidate: 3600 // Revalidate every hour
+  };
 };
 
 export default BlogDetail; 
