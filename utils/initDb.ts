@@ -1,8 +1,6 @@
-const db = require('./db');
-const { blogTableSchema } = require('./blogSchema');
+import db from './db';
+import { blogTableSchema } from './blogSchema';
 
-function initDb() {
+export function initDb() {
   db.exec(blogTableSchema);
-}
-
-module.exports = { initDb }; 
+} 

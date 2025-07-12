@@ -1,4 +1,4 @@
-const blogTableSchema = `
+export const blogTableSchema = `
 CREATE TABLE IF NOT EXISTS blogs (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title TEXT NOT NULL,
@@ -13,6 +13,4 @@ CREATE TABLE IF NOT EXISTS blogs (
   createdAt TEXT DEFAULT CURRENT_TIMESTAMP,
   updatedAt TEXT DEFAULT CURRENT_TIMESTAMP
 );
-`;
-
-module.exports = { blogTableSchema }; 
+`; 
