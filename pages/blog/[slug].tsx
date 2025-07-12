@@ -73,8 +73,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const blog = db.prepare('SELECT * FROM blogs WHERE slug = ?').get(slug);
   
   return { 
-    props: { blog },
-    revalidate: 3600 // Revalidate every hour
+    props: { blog }
   };
 };
 

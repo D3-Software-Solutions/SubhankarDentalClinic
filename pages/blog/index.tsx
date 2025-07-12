@@ -53,8 +53,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const blogs = db.prepare('SELECT * FROM blogs ORDER BY date DESC').all();
   
   return { 
-    props: { blogs },
-    revalidate: 3600 // Revalidate every hour
+    props: { blogs }
   };
 };
 
