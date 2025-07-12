@@ -20,7 +20,7 @@ const Home = () => (
       <section id="features"><Features /></section>
       <section id="services"><Services /></section>
       <section id="about"><About /></section>
-      <Awards />
+      {/* <Awards /> */}
       <section id="emergency"><Emergency /></section>
       <section id="blog"><BlogPreview /></section>
       <Testimonials />
