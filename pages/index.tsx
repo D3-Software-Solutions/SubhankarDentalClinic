@@ -22,10 +22,10 @@ const Home = () => (
       <section id="about"><About /></section>
       {/* <Awards /> */}
       <section id="emergency"><Emergency /></section>
-      <section id="blog"><BlogPreview /></section>
-      <Testimonials />
+      {/* <section id="blog"><BlogPreview /></section> */}
+      {/* <Testimonials /> */}
       <FAQ />
-      <section id="contact"><ContactForm /></section>
+      {/* <section id="contact"><ContactForm /></section> */}
     </main>
     <Footer />
   </>
