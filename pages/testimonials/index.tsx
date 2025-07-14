@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SEO from '../../components/SEO';
 
 interface Testimonial {
   id: number;
@@ -34,6 +35,12 @@ const TestimonialsPage = ({ testimonials: staticTestimonials }: TestimonialsPage
   return (
     <>
       <Header />
+      <SEO
+        title="Patient Testimonials | Dentique Specialist Dental Clinic, Agartala"
+        description="Read real patient testimonials and reviews for Dentique Specialist Dental Clinic in Agartala. Discover why patients trust Dr. Subhankar Paul for expert dental care, comfort, and outstanding results."
+        keywords="dentist reviews Agartala, dental testimonials, best dentist in Agartala, patient experiences, Dr Subhankar Paul, dental clinic feedback"
+        url="https://dentique-agartala.com/testimonials"
+      />
       <main className="pt-24 pb-16 min-h-screen bg-white">
         <div className="container mx-auto px-4 max-w-3xl">
           <h1 className="text-3xl font-bold text-primary mb-8 text-center">Patient Testimonials</h1>

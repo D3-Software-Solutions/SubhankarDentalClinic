@@ -1,5 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SEO from '../../components/SEO';
 
 const awards = [
   {
@@ -17,6 +18,12 @@ const awards = [
 const AwardsPage = () => (
   <>
     <Header />
+    <SEO
+      title="Awards & Recognitions | Dentique Specialist Dental Clinic, Agartala"
+      description="Explore the awards and recognitions received by Dentique Specialist Dental Clinic and Dr. Subhankar Paul in Agartala. Discover our commitment to excellence in dental care, patient satisfaction, and academic achievement."
+      keywords="dentist awards Agartala, dental clinic awards, Dr Subhankar Paul, best dentist in Agartala, dental recognitions, healthcare excellence"
+      url="https://dentique-agartala.com/awards"
+    />
     <main className="pt-24 pb-16 min-h-screen bg-white">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl font-bold text-primary mb-8 text-center">Awards & Recognitions</h1>

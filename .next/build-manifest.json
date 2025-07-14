@@ -27,25 +27,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/awards": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/awards.js"
-    ],
-    "/blog": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/blog.js"
-    ],
     "/services": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/services.js"
     ],
-    "/testimonials": [
+    "/services/teeth-whitening": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/testimonials.js"
+      "static/chunks/pages/services/teeth-whitening.js"
     ]
   },
   "ampFirstPages": []

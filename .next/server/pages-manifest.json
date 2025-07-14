@@ -2,11 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/awards": "pages/awards.js",
   "/": "pages/index.js",
+  "/services/teeth-whitening": "pages/services/teeth-whitening.js",
   "/services": "pages/services.js",
-  "/testimonials": "pages/testimonials.js",
-  "/blog": "pages/blog.js",
-  "/api/testimonials": "pages/api/testimonials.js",
   "/api/blogs": "pages/api/blogs.js"
 }
