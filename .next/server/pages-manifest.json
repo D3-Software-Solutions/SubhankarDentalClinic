@@ -1,9 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/services/teeth-whitening": "pages/services/teeth-whitening.js",
-  "/services": "pages/services.js",
-  "/api/blogs": "pages/api/blogs.js"
-}
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/admin":"pages/admin.html","/":"pages/index.html","/blog/add":"pages/blog/add.html","/services/dental-braces":"pages/services/dental-braces.html","/services/dental-implants":"pages/services/dental-implants.html","/services/denture-for-missing-teeth":"pages/services/denture-for-missing-teeth.html","/services":"pages/services.html","/services/root-canal-treatment":"pages/services/root-canal-treatment.html","/services/implant-dentistry":"pages/services/implant-dentistry.html","/services/routine-checkup":"pages/services/routine-checkup.html","/testimonials/add":"pages/testimonials/add.html","/services/teeth-whitening":"pages/services/teeth-whitening.html","/awards":"pages/awards.html","/blog/[slug]":"pages/blog/[slug].js","/blog":"pages/blog.js","/api/admin-creds":"pages/api/admin-creds.js","/api/blogs":"pages/api/blogs.js","/testimonials":"pages/testimonials.js","/api/testimonials":"pages/api/testimonials.js","/_document":"pages/_document.js","/404":"pages/404.html"}
