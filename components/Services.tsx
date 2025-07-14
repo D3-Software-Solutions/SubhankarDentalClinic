@@ -29,6 +29,22 @@ const services = [
     title: 'Restorative Dentistry',
     desc: 'Comprehensive restoration services including fillings, crowns, and bridges to restore function and aesthetics.',
   },
+  // New treatments
+  {
+    icon: '🦷',
+    title: 'Root Canal Treatment',
+    desc: 'Save infected teeth with painless root canal therapy using advanced techniques.',
+  },
+  {
+    icon: '🦷',
+    title: 'Implant Dentistry',
+    desc: 'Permanent, natural-looking tooth replacement with dental implants for a confident smile.',
+  },
+  {
+    icon: '🦷',
+    title: 'Denture for Missing Teeth',
+    desc: 'Custom-fit dentures to restore comfort, function, and appearance for missing teeth.',
+  },
 ];
 
 const Services = () => (

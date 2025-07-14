@@ -16,15 +16,15 @@ const ContactForm = () => {
                 <span className="inline-flex items-center justify-center w-12 h-12 bg-accent text-white rounded-full text-xl">📍</span>
                 <div>
                   <h4 className="font-semibold text-gray-700">Address</h4>
-                  <address className="not-italic text-gray-600">Dentique Specialist Dental Clinic<br/>[Address], Agartala, Tripura<br/>India</address>
+                  <address className="not-italic text-gray-600">Dentique Specialist Dental Clinic<br/>Ganaraj Chawmani Laxmi, Lakshmi Narayan Bari Rd, opposite shri krishna mandir, Banamalipur, Indranagar, Agartala, Tripura 799001<br/>India</address>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="inline-flex items-center justify-center w-12 h-12 bg-accent text-white rounded-full text-xl">📞</span>
                 <div>
                   <h4 className="font-semibold text-gray-700">Phone</h4>
-                  <a href="tel:+91XXXXXXXXXX" className="text-accent hover:underline block">+91-XXXXXXXXXX</a>
-                  <span className="text-gray-500 text-sm">Emergency: +91-XXXXXXXXXX</span>
+                  <a href="tel:+919940228415" className="text-accent hover:underline block">+91-99402-28415</a>
+                  <span className="text-gray-500 text-sm">Emergency: +91-99402-28415</span>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -76,11 +76,16 @@ const ContactForm = () => {
                   <label htmlFor="service" className="block font-semibold text-gray-700 mb-1">Service Required</label>
                   <select id="service" name="service" className="w-full border-2 border-gray-200 rounded px-4 py-2 focus:outline-none focus:border-accent">
                     <option value="">Select Service</option>
-                    <option value="general">General Checkup</option>
-                    <option value="whitening">Teeth Whitening</option>
-                    <option value="emergency">Emergency Care</option>
-                    <option value="surgery">Maxillofacial Surgery</option>
-                    <option value="other">Other</option>
+                    <option value="General Dentistry">General Dentistry</option>
+                    <option value="Teeth Whitening">Teeth Whitening</option>
+                    <option value="Emergency Dental Care">Emergency Dental Care</option>
+                    <option value="Maxillofacial Surgery">Maxillofacial Surgery</option>
+                    <option value="Routine Checkups">Routine Checkups</option>
+                    <option value="Restorative Dentistry">Restorative Dentistry</option>
+                    <option value="Root Canal Treatment">Root Canal Treatment</option>
+                    <option value="Implant Dentistry">Implant Dentistry</option>
+                    <option value="Denture for Missing Teeth">Denture for Missing Teeth</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div>
@@ -98,7 +103,7 @@ const ContactForm = () => {
           <div className="w-full h-96 max-w-3xl mx-auto rounded-xl overflow-hidden shadow-lg">
             <iframe
               title="Dentique Specialist Dental Clinic Location"
-              src="https://www.google.com/maps?q=Agartala,+Tripura,+India&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14599.219495824667!2d91.26116215582189!3d23.82553670647789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753f555c81d78b9%3A0xdaf6270cb3aee628!2sDentiQue-The%20Dental%20Specialist%7C%20Dental%20Clinic%20In%20Agartala%7C!5e0!3m2!1sen!2sin!4v1752500319105!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

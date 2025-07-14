@@ -10,7 +10,7 @@ const Hero = () => (
     </svg>
     <div className="relative z-10 max-w-3xl mx-auto px-4">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fadeInUp">Best Dentist in Agartala</h1>
-      <p className="text-lg md:text-xl mb-8 opacity-90 animate-fadeInUp max-w-xl mx-auto">Experience world-class dental care at Dentique Specialist Dental Clinic. Led by Dr. Subhankar Paul BDS MDS Maxillofacial Surgeon, we provide comprehensive dental treatments with a focus on patient comfort and satisfaction.</p>
+      <p className="text-lg md:text-xl mb-8 opacity-90 animate-fadeInUp max-w-xl mx-auto">Experience state-of-the-art dental care at Dentique Specialist Dental clinic in Agartala. Led by Dr. Subhankar Paul BDS MDS Maxillofacial Surgeon, we provide comprehensive dental treatments with a focus on patient comfort and satisfaction.</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fadeInUp">
         <a href="#contact" className="bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full font-semibold text-lg shadow transition">Book Appointment</a>
         <a href="#services" className="border-2 border-white hover:bg-white hover:text-primary px-8 py-4 rounded-full font-semibold text-lg transition">Our Services</a>

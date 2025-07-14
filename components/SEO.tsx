@@ -20,13 +20,13 @@ const schema = {
   'description': defaultDescription,
   'image': `${defaultUrl}/logo.png`,
   'url': defaultUrl,
-  'telephone': '+91-XXXXXXXXXX',
+  'telephone': '+91-8259000114',
   'address': {
     '@type': 'PostalAddress',
-    'streetAddress': '[Street Address]',
+    'streetAddress': 'Ganaraj Chawmani Laxmi, Lakshmi Narayan Bari Rd, opposite shri krishna mandir, Banamalipur, Indranagar, Agartala, Tripura 799001',
     'addressLocality': 'Agartala',
     'addressRegion': 'Tripura',
-    'postalCode': '[Postal Code]',
+    'postalCode': '799001',
     'addressCountry': 'India',
   },
   'openingHours': [
@@ -57,12 +57,14 @@ const SEO: React.FC<SEOProps> = ({
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Dentique Specialist Dental Clinic" />
+    <meta name="author" content="Dentique Specialist Dental Clinic, Dr. Subhankar Paul" />
     {/* Open Graph */}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={url} />
+    <meta property="og:phone_number" content="+91-8259000114" />
+    <meta property="og:street-address" content="Ganaraj Chawmani Laxmi, Lakshmi Narayan Bari Rd, opposite shri krishna mandir, Banamalipur, Indranagar, Agartala, Tripura 799001" />
     {/* Twitter Card */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />

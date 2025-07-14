@@ -2,7 +2,7 @@ const features = [
   {
     icon: '🦷',
     title: 'Expert Care',
-    desc: 'Led by Dr. Subhankar Paul BDS MDS Maxillofacial Surgeon from Chennai, ensuring the highest quality dental treatments with years of expertise.',
+    desc: 'Led by Dr. Subhankar Paul BDS MDS Maxillofacial Surgeon from Chennai, ensuring the highest quality dental treatments with years of expertise focusing on providing standardized Dental Treatment in Agartala.',
   },
   {
     icon: '⚡',

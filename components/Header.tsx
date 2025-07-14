@@ -5,13 +5,16 @@ const Header = () => (
     <div className="container mx-auto px-4 py-3 flex justify-between items-center">
       <Link href="#home" className="text-2xl font-bold text-white">Dentique</Link>
       <nav className="hidden md:flex gap-8">
-        <Link href="#home" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Home</Link>
+        <Link href="/" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Home</Link>
         <Link href="#about" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">About</Link>
-        <Link href="#services" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Services</Link>
-        <Link href="#blog" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Blog</Link>
-        <Link href="#contact" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Contact</Link>
+        <Link href="/services" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Services</Link>
+        <Link href="/blog" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Blog</Link>
+        <Link href="/testimonials" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Testimonials</Link>
+        <Link href="/awards" className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Awards</Link>
+        {/* Change Contact link to always go to /#contact for cross-page navigation */}
+        <Link href="/" as="/#contact" scroll={false} className="text-white font-medium hover:text-blue-200 transition relative after:absolute after:left-0 after:-bottom-1 after:w-0 hover:after:w-full after:h-0.5 after:bg-blue-200 after:transition-all">Contact</Link>
       </nav>
-      <Link href="#contact" className="hidden md:inline-block bg-accent text-white px-6 py-2 rounded-full font-bold shadow hover:bg-accent-dark transition">Book Appointment</Link>
+      <Link href="/" as="/#contact" scroll={false} className="hidden md:inline-block bg-accent text-white px-6 py-2 rounded-full font-bold shadow hover:bg-accent-dark transition">Book Appointment</Link>
       {/* Mobile menu icon */}
       <div className="md:hidden flex flex-col gap-1 cursor-pointer">
         <span className="w-7 h-1 bg-white rounded"></span>

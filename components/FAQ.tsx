@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: 'Where is Dentique located?',
-    a: 'We are conveniently located in Agartala, Tripura. See our Contact page for the exact address and map.'
+    a: 'We are conveniently located at Ganaraj Chawmani Laxmi, Lakshmi Narayan Bari Rd, opposite shri krishna mandir, Banamalipur, Indranagar, Agartala, Tripura 799001. See our Contact page for the exact address and map.'
   },
 ];
 
@@ -47,7 +47,7 @@ const FAQ = () => {
               </button>
               <div
                 id={`faq-panel-${i}`}
-                className={`px-6 pb-4 text-gray-700 transition-all duration-300 ${open === i ? 'block' : 'hidden'}`}
+                className={`px-6 pb-4 text-gray-700 transition-all duration-300 ${open === i ? 'block pt-6' : 'hidden'}`}
                 role="region"
                 aria-hidden={open !== i}
               >
