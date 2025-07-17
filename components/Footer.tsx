@@ -48,10 +48,10 @@ const Footer = () => (
         </div>
       </div>
       {/* Awards */}
-      <div className="text-center mt-6">
+      {/* <div className="text-center mt-6">
         <div className="inline-block bg-accent text-white px-4 py-2 rounded font-semibold mr-2">Paper Presentation Award</div>
         <div className="inline-block bg-accent text-white px-4 py-2 rounded font-semibold">Highest Mark Gold Medal</div>
-      </div>
+      </div> */}
       <div className="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
         &copy; 2024 Dentique Specialist Dental Clinic. All rights reserved. | Best Dentist in Agartala | Dr. Subhankar Paul BDS MDS
       </div>

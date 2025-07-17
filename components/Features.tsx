@@ -27,15 +27,33 @@ const features = [
   {
     icon: '📍',
     title: 'Convenient Location',
-    desc: `Strategically located in Agartala for easy access. No more searching for "dental clinic near me" - we're right here for you!`,
+    desc: `Our dental clinic in agartala is located just at the heart of the agartala city, walking distance from Agartala motor stand. You can ask our front desk for treatment at our another branch located near Agartala city centre.`,
+  },
+
+
+
+  {
+    icon: '💉',
+    title: 'Excellent sterilization',
+    desc: `With the increasing number of viral diseases like HIV and Hepatitis-C, we focus strongly on sterilization of our instrument and usage of disposable instrument to keep our patients safe from such biohazards`,
+  },
+  {
+    icon: '🩻',
+    title: 'Advanced Dental Equipment',
+    desc: `Advanced Dental Equipment such as dental X-rays , Scanner and dental implant machine with attachment to multiple dental labs for providing really fast & predictable dental Treatment.`,
+  },
+  {
+    icon: '☦️',
+    title: 'Specialist Treatment',
+    desc: `All our treatments are done by our Specialists or under the guidance of Specialists. Treatment such as Orthodontic correction of teeth are carried out by Orthodontist.`,
   },
 ];
 
 const Features = () => (
-  <section className="py-20 bg-white" id="features">
+  <section className="pt-12 pb-6 bg-white" id="features">
     <div className="container mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-14 relative inline-block after:block after:mx-auto after:mt-2 after:w-20 after:h-1 after:bg-accent after:rounded"></h2>
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 relative inline-block after:block after:mx-auto after:mt-2 after:w-20 after:h-1 after:bg-accent after:rounded">Our Features</h2>
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-4">
         {features.map((f, i) => (
           <div key={f.title} className="bg-white rounded-2xl text-center p-10 border border-gray-200 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 animate-fadeInUp">
             <div className="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-accent to-accent-dark text-3xl mb-4">{f.icon}</div>

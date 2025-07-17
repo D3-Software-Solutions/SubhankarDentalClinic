@@ -10,6 +10,7 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import WhyUs from '@components/WhyUs';
 // import Testimonials from '../components/Testimonials'; // Placeholder for future
 
 const Home = () => (
@@ -17,6 +18,7 @@ const Home = () => (
     <Header />
     <main>
       <section id="home"><Hero /></section>
+      <section id="whyus"><WhyUs /></section>
       <section id="features"><Features /></section>
       <section id="services"><Services /></section>
       <section id="about"><About /></section>

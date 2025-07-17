@@ -23,7 +23,7 @@ const ContactForm = () => {
                 <span className="inline-flex items-center justify-center w-12 h-12 bg-accent text-white rounded-full text-xl">📞</span>
                 <div>
                   <h4 className="font-semibold text-gray-700">Phone</h4>
-                  <a href="tel:+919940228415" className="text-accent hover:underline block">+91-99402-28415</a>
+                  <a href="tel:+919940228415" className="text-accent hover:underline block">+91-82590-00114</a>
                   <span className="text-gray-500 text-sm">Emergency: +91-99402-28415</span>
                 </div>
               </li>
