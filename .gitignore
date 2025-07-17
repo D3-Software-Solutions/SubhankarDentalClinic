@@ -1,4 +1,6 @@
 # Ignore Next.js build output
-node_modules
-.next/*
-.next
+
+node_modules/
+.next/
+.swc/
+.*.env
