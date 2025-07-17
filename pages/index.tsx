@@ -11,11 +11,13 @@ import FAQ from '../components/FAQ';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import WhyUs from '@components/WhyUs';
+import SEO from '../components/SEO';
 // import Testimonials from '../components/Testimonials'; // Placeholder for future
 
 const Home = () => (
   <>
     <Header />
+    <SEO canonicalUrl="https://dentique-agartala.com/" />
     <main>
       <section id="home"><Hero /></section>
       <section id="whyus"><WhyUs /></section>

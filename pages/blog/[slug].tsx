@@ -29,6 +29,21 @@ const BlogDetail = ({ blog }: BlogDetailProps) => (
       description={blog.seoDescription || blog.content.slice(0, 150)}
       keywords={blog.seoKeywords || 'dental blog, best dentist in Agartala, oral health'}
       url={`https://dentique-agartala.com/blog/${blog.slug}`}
+      canonicalUrl={`https://dentique-agartala.com/blog/${blog.slug}`}
+      image={blog.images && blog.images.length > 0 ? blog.images[0] : undefined}
+      structuredData={{
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': blog.title,
+        'description': blog.seoDescription || blog.content.slice(0, 150),
+        'image': blog.images && blog.images.length > 0 ? blog.images[0] : undefined,
+        'author': {
+          '@type': 'Person',
+          'name': 'Dr. Subhankar Paul',
+        },
+        'datePublished': blog.date,
+        'mainEntityOfPage': `https://dentique-agartala.com/blog/${blog.slug}`,
+      }}
     />
     <main className="pt-24 pb-16 min-h-screen bg-white">
       <div className="container mx-auto px-4 max-w-3xl">

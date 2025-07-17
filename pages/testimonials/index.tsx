@@ -40,6 +40,19 @@ const TestimonialsPage = ({ testimonials: staticTestimonials }: TestimonialsPage
         description="Read real patient testimonials and reviews for Dentique Specialist Dental Clinic in Agartala. Discover why patients trust Dr. Subhankar Paul for expert dental care, comfort, and outstanding results."
         keywords="dentist reviews Agartala, dental testimonials, best dentist in Agartala, patient experiences, Dr Subhankar Paul, dental clinic feedback"
         url="https://dentique-agartala.com/testimonials"
+        canonicalUrl="https://dentique-agartala.com/testimonials"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          'itemListElement': testimonials.map((t, idx) => ({
+            '@type': 'Review',
+            'author': { '@type': 'Person', 'name': t.name },
+            'reviewBody': t.testimonial,
+            'datePublished': t.createdAt,
+            ...(t.images && t.images.length > 0 ? { 'image': t.images[0] } : {}),
+            'position': idx + 1,
+          })),
+        }}
       />
       <main className="pt-24 pb-16 min-h-screen bg-white">
         <div className="container mx-auto px-4 max-w-3xl">

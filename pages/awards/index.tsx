@@ -6,12 +6,14 @@ const awards = [
   {
     icon: '🏆',
     title: 'Paper Presentation Award',
-    desc: 'Recognized for excellence in academic paper presentation.'
+    desc: 'Recognized for excellence in academic paper presentation.',
+    year: '2022',
   },
   {
     icon: '🥇',
     title: 'Highest Mark Gold Medal',
-    desc: 'Awarded for achieving the highest marks in the university.'
+    desc: 'Awarded for achieving the highest marks in the university.',
+    year: '2023',
   },
 ];
 
@@ -23,6 +25,19 @@ const AwardsPage = () => (
       description="Explore the awards and recognitions received by Dentique Specialist Dental Clinic and Dr. Subhankar Paul in Agartala. Discover our commitment to excellence in dental care, patient satisfaction, and academic achievement."
       keywords="dentist awards Agartala, dental clinic awards, Dr Subhankar Paul, best dentist in Agartala, dental recognitions, healthcare excellence"
       url="https://dentique-agartala.com/awards"
+      canonicalUrl="https://dentique-agartala.com/awards"
+      structuredData={{
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'itemListElement': awards.map((a, idx) => ({
+          '@type': 'Award',
+          'name': a.title,
+          'description': a.desc,
+          'position': idx + 1,
+          'award': a.title,
+          'dateReceived': a.year,
+        })),
+      }}
     />
     <main className="pt-24 pb-16 min-h-screen bg-white">
       <div className="container mx-auto px-4 max-w-3xl">

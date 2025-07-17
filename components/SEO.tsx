@@ -6,6 +6,9 @@ interface SEOProps {
   description?: string;
   keywords?: string;
   url?: string;
+  canonicalUrl?: string;
+  image?: string;
+  structuredData?: object;
 }
 
 const defaultTitle = 'Best Dentist in Agartala | Dentique Specialist Dental Clinic | Dr. Subhankar Paul';
@@ -51,6 +54,9 @@ const SEO: React.FC<SEOProps> = ({
   description = defaultDescription,
   keywords = defaultKeywords,
   url = defaultUrl,
+  canonicalUrl,
+  image,
+  structuredData,
 }) => (
   <Head>
     <title>{title}</title>
@@ -58,6 +64,8 @@ const SEO: React.FC<SEOProps> = ({
     <meta name="keywords" content={keywords} />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Dentique Specialist Dental Clinic, Dr. Subhankar Paul" />
+    {/* Canonical URL */}
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     {/* Open Graph */}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -65,12 +73,14 @@ const SEO: React.FC<SEOProps> = ({
     <meta property="og:url" content={url} />
     <meta property="og:phone_number" content="+91-8259000114" />
     <meta property="og:street-address" content="Ganaraj Chawmani Laxmi, Lakshmi Narayan Bari Rd, opposite shri krishna mandir, Banamalipur, Indranagar, Agartala, Tripura 799001" />
+    {image && <meta property="og:image" content={image} />}
     {/* Twitter Card */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    {image && <meta name="twitter:image" content={image} />}
     {/* Schema Markup */}
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData ? [schema, structuredData] : schema) }} />
   </Head>
 );
 
