@@ -12,6 +12,7 @@ import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import WhyUs from '@components/WhyUs';
 import SEO from '../components/SEO';
+import Carousel from '../components/Carousel';
 // import Testimonials from '../components/Testimonials'; // Placeholder for future
 
 const Home = () => (
@@ -23,6 +24,7 @@ const Home = () => (
       <section id="whyus"><WhyUs /></section>
       <section id="features"><Features /></section>
       <section id="services"><Services /></section>
+      <section id="carousel"><Carousel /></section>
       <section id="about"><About /></section>
       {/* <Awards /> */}
       <section id="emergency"><Emergency /></section>
